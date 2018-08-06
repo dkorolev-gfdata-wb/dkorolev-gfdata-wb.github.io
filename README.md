@@ -72,7 +72,7 @@ Due to the fact that project requires Azure AD authentication, before deploying 
     - "Read items in all site collections"
 7. Save changes.
 8. Copy "Application ID", go to the project, open adalConfig.ts file (src -> adal -> adalConfig.ts) and update "prodAppId" variable.
-9. Rebuid project: 
+9. Rebuild the project: 
 
 ```
 npm run build
