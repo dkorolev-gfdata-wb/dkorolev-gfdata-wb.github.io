@@ -1,11 +1,11 @@
 
 # WB-Dashboards
 
-The project consists of "Projects", "Resource" and "Team" dashboards that allow to manipulate a large amount of data related to projects within the organization (information about projects, tasks, milestones, phases, terms, etc.).
+The project consists of the "Projects", "Resource" and "Team" dashboards that allow to manipulate a large amount of data related to projects within the organization (information about projects, tasks, milestones, phases, terms, etc.).
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Getting a local version of the project
 
@@ -16,6 +16,8 @@ $/WBEngineering/wb-dashboards
 ```
 
 ### Installing all project dependencies
+
+Installs all dependencies of the app.
 
 ```
 npm install
@@ -39,12 +41,12 @@ npm run build
 
 ## Deployment to GitHub Pages (https://dkorolev-gfdata-wb.github.io)
 
-Project is already configured to deploying to GitHub Pages (https://dkorolev-gfdata-wb.github.io). So, everything you need to do to deploy app is:
+The project is already configured for deployment to GitHub Pages (https://dkorolev-gfdata-wb.github.io). So, everything you need to do is:
 
 1. Set origin url
 
 ```
-git remote set-url origin https://dkorolev-gfdata-wb:<Password>@github.com/dkorolev-gfdata-wb/dkorolev-gfdata-wb.github.io.git/
+git remote set-url origin https://dkorolev-gfdata-wb:<***git hub password***>@github.com/dkorolev-gfdata-wb/dkorolev-gfdata-wb.github.io.git/
 ```
 
 2. Run the following command
@@ -53,9 +55,9 @@ git remote set-url origin https://dkorolev-gfdata-wb:<Password>@github.com/dkoro
 npm run deploy
 ```
 
-That's it. If all goes well, you will see "Published" in your console.
+That's it. If all goes well, you will see "Published" in your console. After that you can go to https://dkorolev-gfdata-wb.github.io and check your changes.
 
-## Deployment somewhere else
+## Build app for deployment somewhere outside the GitHub pages
 
 In view of the fact that project requires Azure AD authentication, before deploying project somewhere we need to configure Azure AD App for the new instance of the application. We have to perform the following steps for this:
 
@@ -75,4 +77,4 @@ In view of the fact that project requires Azure AD authentication, before deploy
 npm run build
 ```
 
-That's it. If all goes well, after completing this operation you can find fresh version of the app in the build folder.
+That's it. If all goes well, after completing this operation in the build folder you'll have fresh version of the app. Then you can deploy it anywhere you need.
