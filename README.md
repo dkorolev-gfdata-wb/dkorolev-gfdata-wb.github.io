@@ -59,7 +59,7 @@ That's it. If all goes well, you will see "Published" in your console. After tha
 
 ## Build app for deployment somewhere outside the GitHub pages
 
-In view of the fact that project requires Azure AD authentication, before deploying project somewhere we need to configure Azure AD App for the new instance of the application. We have to perform the following steps for this:
+Due to the fact that project requires Azure AD authentication, before deploying project somewhere we need to configure Azure AD App for the new instance of the application. We have to perform the following steps for this:
 
 1. Go to the Microsoft Azure Portal -> Azure Active Directory -> App registrations.
 2. Click "New application registration".
@@ -71,8 +71,9 @@ In view of the fact that project requires Azure AD authentication, before deploy
     - "Read and write items in all site collections"
     - "Read items in all site collections"
 7. Save changes.
-8. Copy "Application ID", go to the project, open adalConfig.ts (src -> adal -> adalConfig.ts) file and update "prodAppId" variable.
+8. Copy "Application ID", go to the project, open adalConfig.ts file (src -> adal -> adalConfig.ts) and update "prodAppId" variable.
 9. Rebuid project: 
+
 ```
 npm run build
 ```
